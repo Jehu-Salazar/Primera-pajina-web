@@ -1,0 +1,168 @@
+/* Estilos generales */
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transición suave */
+}
+
+.centrador {
+    text-align: center;
+}
+
+
+
+/* Título */
+.titulo {
+    
+    font-family: "Times New Roman", Times, serif;
+    color: red;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-size: 70px;  /* tamaño de letra */
+    font-weight: bold;
+}
+
+
+
+.contenedor h1{
+    margin-top: -10 px;
+}
+
+.cuadro p {
+    text-align: justify; /* Justifica el texto para que se vea alineado */
+    width: 100%; /* Asegura que use todo el ancho del cuadro */
+}
+
+p {
+    margin-top: -20px;
+    color: rgb(255, 255, 255); /* este el para el parrafo */
+    font-family: "Georgia", "Times New Roman", serif; /* Fuente bonita y elegante */
+    text-shadow: -0.5px -0.5px 0 rgb(255, 0, 0), 1.5px -1.5px 0 rgb(251, 2, 2), -0.5px 0.5px 0 rgb(246, 5, 5), 1.5px 1.5px 0 rgb(0, 0, 0);
+    font-style: italic; /* Pone el texto en cursiva */
+    text-align: center; /* Centra el texto */
+    font-size: 27px; /* Ajusta el tamaño del texto */
+}
+
+.caja.expandida p {
+   /* 🔹 Cambia el color a negro o el que prefieras */
+    font-size: 16px; /* 🔹 Ajusta el tamaño del texto */
+    font-family: "Georgia", "Times New Roman", serif;  /* 🔹 Usa otra fuente si quieres */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    
+     /* 🔹 Elimina el efecto de sombra si no lo quieres */
+    text-align: justify; /* 🔹 Ajusta la alineación */
+    
+}
+
+
+.cuadro {
+    margin-top: 10px;
+    width: 1400px; /* Ancho del cuadro */
+    height: 300px;
+    padding: 20px; /* Espacio interno */
+    background-color: rgba(255, 255, 255, 0.19); /* Fondo negro con 20% de transparencia */
+    color: white; /* Texto blanco */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+}
+
+/* Contenedor principal */
+.contenedor {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    
+}
+
+
+/* Caja de imagen y leyenda */
+.caja {
+    
+    display: flex;
+    width: 300px;
+    height: 150px;
+    border: 2px solid rgb(9, 9, 9);
+    margin-top: 50px;
+    margin-left: 1px;
+    position: relative;
+    transition: transform 0.3 ease-in-out;
+  
+    
+}
+
+
+
+.expandida p {
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+    
+}
+
+
+
+
+/* Imagen */
+.imagen {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+}
+
+/* Leyenda */
+.leyenda {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* Botón VISITAR */
+.visitar {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.visitar:hover {
+    background-color: darkgreen;
+}
+
+
+
+.caja.expandida {
+    margin-top: 1%;
+    position: fixed;
+    left: 50%;
+    top: 35%; /* Subir la caja más arriba */
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -10%);
+    z-index: 100;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: white;
+    padding: 20px;
+    overflow: auto; /* Agregar barra de desplazamiento si el contenido es grande */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
